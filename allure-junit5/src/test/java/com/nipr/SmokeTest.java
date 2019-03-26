@@ -1,5 +1,6 @@
 package com.nipr;
 
+import io.qameta.allure.Attachment;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import org.junit.jupiter.api.Test;
@@ -16,6 +17,7 @@ public class SmokeTest
      */
     @Test
     @Severity(SeverityLevel.BLOCKER)
+    @Attachment(value = "Page screenshot", type = "image/png")
     public void smokeTestAsBlocker() {
 
     }
