@@ -25,6 +25,8 @@ public class SmokeTest
     @Attachment(value = "PageScreenshot", type = "image/png")
     public void smokeTestAsBlocker() {
         Configuration.browser = "firefox";
+        Configuration.reportsFolder = "allure-results";
+
         String expectedTitle = "Identify Licensee - My NIPR";
         open("https://pdb.nipr.com/my-nipr/frontend/identify-licensee");
         Assertions.assertEquals(expectedTitle, title());

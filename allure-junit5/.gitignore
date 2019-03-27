@@ -74,3 +74,5 @@ modules.xml
 .idea/misc.xml
 *.ipr
 target/
+allure-results/
+build/
